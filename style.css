@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    height: 110px;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: relative;
+}
+
+
+header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+
+header nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+/* Inicio Portafolio Tecnologias y Contacto */
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+main {
+    background-color: #0a0a0a;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+
+section {
+    padding: 40px 60px;
+}
+
+
+footer {
+    padding: 24px 60px;
+    background-color: #0f0f0f;
+    color: #888888;
+    font-size: 13px;
+    display: flex;
+}
+
+.Info {
+    border-top: 2px solid #e63946;
+}
+
+/* h1 span   */
+h1 span {
+    color: #e63946;
+}
+
+.division1 {
+    border-top: 2px solid #e63946;
+}
+
+.descripcionini {
+    color: #888888;
+}
+
+.TituloPr {
+    color: #e63946;
+}
+
+.DesTituloPr {
+    color: #888888;
+}
+
+.TituLab1 {
+    color: #e63946;
+}
+
+.TituLab2 {
+    color: #e63946;
+}
+
+.TituLab3 {
+    color: #e63946;
+}
+
+.division2 {
+    border-top: 2px solid #e63946;
+}
+
+.Skills {
+    color: #e63946;
+}
+
+
+.skills1 {
+    color: #e63946;
+}
+
+.skills2 {
+    color: #e63946;
+}
+
+.skills3 {
+    color: #e63946;
+}
+
+.skills4 {
+    color: #e63946;
+}
+
+
+.division3 {
+    border-top: 2px solid #e63946;
+}
+
+.sobremi {
+    color: #e63946;
+}
+
+.Dessobremi {
+    color: #888888;
+}
+
+.division4 {
+    border-top: 2px solid #e63946;
+}
+
+.division5 {
+    border-top: 2px solid #e63946;
+}
+
+
+                                                                /* Zona de proyectos */
+/* En la parte de imagenes me apoye de la IA y en elementos de los proyectos que me hacian falta para verse al 100*/
+.proyectos {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Lampaio */
+.proyecto1 {
+    background-color: #0f0f0f;
+    border: 1px solid #444444;
+    padding: 20px;
+    text-align: center;
+    width: 280px;      
+    margin: 0;
+}
+
+.ImagenProy1 {
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.ImagenProy1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botonVerMasLampaio {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+/* Replicacion Bases De Datos */
+.proyecto2 {
+    background-color: #0f0f0f;
+    border: 1px solid #444444;
+    padding: 20px;
+    text-align: center;
+    width: 280px;      
+    margin: 0;
+}
+
+.ImagenProy2 {
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.ImagenProy2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botonVerMasReplicacion {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+/* Portafolio */
+.proyecto3 {
+    background-color: #0f0f0f;
+    border: 1px solid #444444;
+    padding: 20px;
+    text-align: center;
+    width: 280px;      
+    margin: 0;
+}
+
+.ImagenProy3 {
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.ImagenProy3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botonVerMasPortafolio {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+/* Adaptando a otros dispositivos*/
+@media (max-width: 768px) {
+    .proyectos {
+        flex-direction: column; 
+    }
+
+    .proyecto1, .proyecto2, .proyecto3 {
+        width: 100%;  
+    }
+
+    /* Aca me apoye de ia* Inicio */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    header nav {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+     /* fin */
+
+    @media (max-width: 768px) {
+    section {
+        padding: 30px 20px;
+        }
+    }
+}   
