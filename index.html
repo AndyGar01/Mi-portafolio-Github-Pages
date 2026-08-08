@@ -1,158 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--------------------------------------------------------------------------------------Head-------------------------------------------------------------------------->
+
 <head>
 
-	<!-- Metadato que aparece en google debajo del titulo-->
 	<meta name="description" content="Portafolio Andy Garcia">
-	<!-- Metadato para que se vean bien las tildes-->
 	<meta charset="UTF-8">
-	<!--Metadato para mostrar en celular -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--Parte principal de mi portafolio (parte de arriba)-->
+    <link rel="stylesheet" href="./style.css">
+    
 	<title> Inicio | Andy Garcia </title>
 </head>
-<!------------------------------------------------------------------------------------Fin Head-------------------------------------------------------------------------->
 
-<!----------------------------------------------------------------------------------Inicio Body-------------------------------------------------------------------------->
-<body>
-	<!-- parte superior a la par del logo -->
+<section>
 	<header>
-    <a href="#inicio"> <img src="Logo.png" alt="Logo Andy Garcia" height="100"></a>
+    <a href="#inicio"> <img src="Logo.png" alt="Logo Andy Garcia" height="85"></a>
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#tecnologias">Tecnologías</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Portafolio">Portafolio</a></li>
+            <li><a href="#Habilidades">Habilidades</a></li>
+            <li><a href="#Sobremi">Sobre mi</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
-<!----------------------------------------------------------------------------------Secciones Body-------------------------------------------------------------------------->
+
+
+
+
 <main> 
-<section id="inicio">
-        <h1>Hola, soy Andy Garcia, Estudiante de Ingeniería en Sistemas.</h1>
-        <p>Apasionado por la ciberseguridad ofensiva/defensiva, redes y desarrollo web.
-		Actualmente soy estudiante de la Universidad Mariano Gálvez de Guatemala, me <br>
-		gusta trabajar con herramientas como Kali Linux, Nmap, Hydra y Metasploit. 
-		Aprendo haciendo laboratorios prácticos, certificaciones y por máquinas virtuales.</p>
-
-        <input type="submit" value="Mas sobre mi"/>
-    
-<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<section id="Inicio", class="division1">
+        <p>Hola soy</p>
+        <h1><span>Andy Garcia,</span></h1>
+        <h1> Ciberseguridad & </h1>
+        <h1> Desarrollo Web </h1>
+        <br>
+        <p class="descripcionini">Apasionado por la ciberseguridad ofensiva/defensiva <br>
+        redes y desarrollo web, actualmente soy estudiante <br> 
+        de la Universidad Mariano Gálvez de Guatemala</p>        
+        <br>
+        <input type="submit" value="Ver Proyectos"/>
+        <input type="submit" value="Descargar CV"/><br>
+        <br>
+        <p>Sigueme en: </p>  
 </section>
+<section id="Info" class="Info"></section>
 
-<section id="tecnologias">
-<h1>Algunas de las Tecnologias que manejo son las siguientes</h1>
-	<h2>Ciberseguridad</h2>
-    <ul>
-        <li>Kali Linux</li> <li>Nmap</li> <li>Hydra</li> <li>Metasploit</li> <li>Wireshark</li> <li>Tcpdump</li>
-    </ul>
-<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
-	<h2>Redes</h2>
-    <ul> 
-		<li>OpenVPN</li> <li>Squid Proxy</li> <li>Iptables</li>
-	</ul>
-<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
-	<h2>Sistemas / Virtualización</h2>
-    <ul>
-        <li>Ubuntu</li> <li>VirtualBox</li>
-	</ul>
-<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
-    <h2>Desarrollo</h2>
-    <ul>
-        <li>Python</li>
-	</ul>
-<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
-	<h2>Bases de datos</h2>
-    <ul>
-        <li>SQL Server</li>
-		<li>Mysql Workbench</li>
-    </ul>
-
-<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-</section> 
-
-<section id="portafolio">
-	<h1>Proyectos Destacados</h1>
-    <h2> Lab Lampião — Dirty COW</h2>
+<section id="Portafolio", class="division2">
+	<h1 class= "TituloPr"> Proyectos Destacados </h1>
+    
+    <br>
+    <p class="DesTituloPr" > Laboratorios practicos y proyectos academicos </p>
+    
+    <br>
+    <div class="proyectos">
+    <div class="proyecto1">
+        <div class="ImagenProy1">      
+            <img src="Lampaio.png" alt="Lab Lampião Dirty COW">
+        </div>
+    <br>
+    <h3 class="TituLab1">  Lab Lampião — Dirty COW </h3>
+    <br>
 	<p> Explotación de máquina vulnerable con Hydra, Dirty COW y configuración de DMZ. </p>
-    <input type="submit" value="Ver mas"/>
+    <br>
+    <input type="submit" value="Ver mas" class="botonVerMasLampaio">
+    </div>
     <br>
 
-    <h2> Configuración de replicación</h2>
-	<p> Master-Slave entre 2 servidores MySQL en VirtualBox. Sincronización de datos  </p>
-    <input type="submit" value="Ver mas"/>
-    <br>
 
-    <h2> Portafolio Personal </h2>
-	<p> Este portafolio desarrollado desde cero con HTML, CSS y JavaScript puro. Diseño dark rojo profesional.  </p>
-    <input type="submit" value="Ver mas"/>
     <br>
-    
+    <div class="proyecto2">
+        <div class="ImagenProy2">      
+            <img src="ReplicacionMaster-Slave.png" alt="Lab Replicacion Base De Datos">
+        </div>
+    <br>
+    <h3 class="TituLab2" > Configuración de replicación </h3>
+    <br>
+	<p> Master-Slave entre 2 servidores MySQL en VirtualBox. Sincronización de datos </p>
+    <br>
+    <input type="submit" value="Ver mas" class="botonVerMasReplicacion"/>
+    </div>
+    <br> 
+
+
+    <br>
+    <div class="proyecto3">
+        <div class="ImagenProy3">      
+            <img src="Portafolio.png" alt="Portafolio">
+        </div>
+        <br>
+        <h3 class="TituLab3" > Portafolio Personal </h3>
+        <br>    
+	    <p>  Portafolio desarrollado desde cero con HTML, CSS y JavaScript puro. Diseño dark rojo profesional. </p>
+        <br>
+        <input type="submit" value="Ver mas" class="botonVerMasPortafolio"/>
+    </div>
+    <br>
+</div>
 </section> 
 
-<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
-<section id="contacto">
-    <h1>Contáctame</h1>
 
-    <form autocomplete="off">
 
-            <div>
-                <label for="NombreContacto">Nombre Completo</label>
-                <input type="text" id="NombreContacto" name="nombre" required/>
-                
-            </div>
-			<br>
 
-            <div>
-                <label for="Correo">Correo Electrónico</label>
-                <input type="email" id="Correo" name="correo"  required/>
-                
-            </div>
-			<br>
+<section id="Habilidades", class="division3">
+<h1 class="Skills"> Habilidades </h1>
+    <br>
+    <h2> Algunas de las Tecnologias que manejo son las siguientes </h2>
+    <br>
+	<h3 class="skills1"> Ciberseguridad </h3>
+    <br>
+    <ul>
+        <li>Kali Linux</li> <br> <li>Nmap</li> <br> <li>Hydra</li> <br> <li>Metasploit</li> <br> <li>Wireshark</li> <br> <li>Tcpdump</li>
+    </ul>
+    <br>
+	<h3 class="skills2"> Redes </h3>
+    <br>
+    <ul> 
+		<li> OpenVPN </li> <br> <li>Squid Proxy</li> <br> <li>Iptables</li>
+	</ul>
+    <br>
+	<h3 class="skills3"> Sistemas / Virtualización </h3>
+    <br>
+    <ul>
+        <li>Ubuntu</li> <br> <li>VirtualBox</li>
+	</ul>
+    <br>
+    <h3 class="skills3" > Desarrollo </h3>
+    <br>
+    <ul>
+        <li> Python </li>
+	</ul>
+    <br>
+	<h3 class="skills4" > Bases de datos </h3>
+    <br>
+    <ul>
+        <li>SQL Server</li> <br> <li>Mysql Workbench</li>
+    </ul>
+</section> 
 
-            <div>
-                <label for="Asunto">Asunto</label>
-                <input type="text" id="Asunto" name="asunto" required/>
-                
-            </div>
-			<br>
 
-            <div>
-                <label for="Telefono">Teléfono</label>
-                <input type="tel" id="Telefono" name="telefono">
-                
-            </div>
-			<br>
 
-            <div>
-                <label for="Mensaje">Mensaje</label>
-                <textarea id="Mensaje" name="mensaje" rows="4" required></textarea>
-            </div>
-			<br>
 
-			<br>
-            <input type="submit" value="Enviar Mensaje"/>
-        
-    </form>
+
+<section id="Sobremi", class="division4">
+<h1 class="sobremi"> Sobre mi</h1>
+<br>
+
+<h2> Aprendo haciendo, no solo leyendo </h2>
+<br>
+
+<p class="Dessobremi"> Estudiante de Ingeniería en Sistemas, con experiencia sobre: <br>
+<br>        ciberseguridad, redes y desarrollo web. <br> 
+<br>        Laboratorios prácticos con Kali Linux <br>
+<br>        Configuración de redes y VPN</p>
 </section>
-
 </main>
 <br>
-<footer>
-"El plan de Dios siempre es el mejor; el camino puede ser duro, pero para el no hay nada imposibles y Su amor nunca faltará."
-</footer>
 
-<script> 
-	console.log("Hola mundo")  
-</script>
+
+
+<section id="Contacto", class="division5"> 
+<footer>
+"El plan de Dios siempre es el mejor; el camino puede ser duro, 
+<br>pero para el no hay nada imposibles y Su amor nunca faltará."
+
+<a href="mailto:agarcial32@miumg.edu.gt"> Contactame</a>
+</footer>
+</section>
 </body>
 </html>
